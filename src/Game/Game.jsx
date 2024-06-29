@@ -1,16 +1,19 @@
 import React, { useState, useSyncExternalStore } from "react";
 import "./Game.css"
+import Rules from "../Rules/Rules";
 
 export default function Game(props){
 
     const [score, setScore] = useState(0)
     const [guess, setGuess] = useState()
-    const [answer, setAnswer] = useState(0)
+    const [answer, setAnswer] = useState()
 
     const max = 6
     const min = 1
 
     const numbersArray = [1, 2, 3, 4, 5, 6]
+
+    const [rulesAreShowing, toggleRules] = useState(true)
 
     const generateAnswer = () => {
 
@@ -39,7 +42,8 @@ export default function Game(props){
     }
 
     const showRules = () => {
-        console.log("Show Rules")
+        console.log("Hello", rulesAreShowing)
+        toggleRules(s => !s)
     }
 
     return (
@@ -63,6 +67,8 @@ export default function Game(props){
                 <button onClick={resetScore}>Reset Score</button>
                 <button onClick={showRules}>Show Rules</button>
             </div>
+
+            {rulesAreShowing && <Rules/>}
         </div>
         </>
     )
