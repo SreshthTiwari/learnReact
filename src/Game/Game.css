@@ -18,14 +18,23 @@
     padding: 20px;
 }
 .scoreLabel{
-    font-weight: 500;
     padding: 0;
     font-size: 20px;
+    font-weight: 200;
 }
 .scoreCount{
     padding: 0;
-    font-weight: 900;
+    font-weight: 200;
     font-size: 55px;
+}
+.numbersContainer{
+    text-align: center;
+}
+.numbersContainer p{
+    font-weight: 100;
+    font-size: 25px;
+    width: 100%;
+    padding: 25px 0;
 }
 .guesses button{
     margin: 5px;
@@ -35,7 +44,13 @@
     background: none;
     border: 1px solid black;
     transition: 0.3s ease;
-
+}
+button{
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid black;
+    transition: 0.3s ease;
+    margin: 10px;
 }
 button:hover{
     transition: 0.3s ease;

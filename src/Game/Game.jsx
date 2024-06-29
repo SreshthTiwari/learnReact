@@ -56,6 +56,7 @@ export default function Game(props){
                     <button onClick={() => handleGuess({Number})}>{Number}</button>
                 )}
             </ul>
+            <p>Choose A Number To Make A Guess</p>
             </div>
 
             <div className="playerControls">

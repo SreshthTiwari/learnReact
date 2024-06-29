@@ -14,6 +14,8 @@
 }
 .text h1{
     font-size: 45px;
+    font-weight: 200;
+    padding: 10px 0;
 }
 .text p{
     font-size: 20px;
