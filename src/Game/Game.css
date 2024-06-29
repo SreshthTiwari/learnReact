@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.gameContainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+}
+.scoreLabel{
+    font-weight: 500;
+    padding: 0;
+    font-size: 20px;
+}
+.scoreCount{
+    padding: 0;
+    font-weight: 900;
+    font-size: 55px;
+}
+.guesses button{
+    margin: 5px;
+    font-size: 55px;
+    font-weight: 200;
+    padding: 10px 25px;
+    background: none;
+    border: 1px solid black;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    transition: 0.3s ease;
+    cursor: pointer;
+    background: black;
+    color: white;
+}

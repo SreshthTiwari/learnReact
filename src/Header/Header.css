@@ -1,0 +1,33 @@
+.headerContainer{
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 45px;
+}
+.text p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.buttons button{
+    padding: 9px 20px;
+    border: 1px solid black;
+    background: none;
+    transition: 0.3s ease;
+}
+button:hover{
+    transition: 0.3s ease;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
